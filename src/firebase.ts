@@ -4,12 +4,12 @@ import 'firebase/storage'
 import 'firebase/firestore'
 
 const firebaseConfig = {
-    apiKey: "AIzaSyBqTVb_fezf0ucNNavb5n8jwzew2cTXtho",
-    authDomain: "video-calling-chat.firebaseapp.com",
-    projectId: "video-calling-chat",
-    storageBucket: "video-calling-chat.appspot.com",
-    messagingSenderId: "735043138423",
-    appId: "1:735043138423:web:453c3c94e7b9cb75136772"
+    apiKey: process.env.REACT_APP_API_KEY,
+    authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+    projectId: process.env.REACT_APP_PROJECT_ID,
+    storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+    messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
+    appId: process.env.REACT_APP_APP_ID
 }
 
 const app = firebase.initializeApp(firebaseConfig)
